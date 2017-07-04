@@ -1,0 +1,48 @@
+{
+  "name": "my-electron-react-boilerplate",
+  "version": "1.0.0",
+  "description": "Description of application",
+  "main": "electron.main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack:dev": "webpack -d --watch",
+    "webpack:prod": "webpack -p",
+    "webpack:build": "concurrently -p \"[{name}]\" -n \"CLEAN,WEBPACK\" -c \"bgBlue.bold,bgGreen.bold\" \"npm run clean:dist\" \"npm run webpack:prod\" ",
+    "renderer:build": "sudo yarn clean:dist && webpack -p",
+    "clean:dist": "rimraf ./dist/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saisandeepvaddi/whatsapp-green.git"
+  },
+  "keywords": ["whatsapp", "message", "chat", "desktop", "privacy", "electron"],
+  "author": "Sai Sandeep Vaddi <saisandeepvaddi@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/saisandeepvaddi/whatsapp-green/issues"
+  },
+  "homepage": "https://github.com/saisandeepvaddi/whatsapp-green#readme",
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.5.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.4",
+    "devtron": "^1.4.0",
+    "electron-reload": "^1.2.1",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "html-webpack-plugin": "^2.29.0",
+    "rimraf": "^2.6.1",
+    "style-loader": "^0.18.2",
+    "uglifyjs-webpack-plugin": "^0.4.6",
+    "webpack": "^3.0.0",
+    "webpack-bundle-analyzer": "^2.8.2"
+  }
+}
