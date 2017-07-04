@@ -1,5 +1,5 @@
 const electron = require("electron");
-const { BrowserWindow } = electron;
+const { BrowserWindow, ipcMain, app } = electron;
 const url = require("url");
 const path = require("path");
 exports.window;
@@ -9,7 +9,8 @@ exports.createWindow = () => {
     width: 500,
     height: 300,
     minWidth: 500,
-    minHeight: 300
+    minHeight: 300,
+    show: false
   });
 
   this.window.loadURL(

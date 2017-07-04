@@ -8,8 +8,17 @@ let win;
 
 app.on("ready", () => {
   win = window.createWindow();
-  const menu = Menu.buildFromTemplate(menuTemplate);
-  Menu.setApplicationMenu(menu);
+
+  const contents = win.webContents;
+
+  contents.on("dom-ready", () => {
+    win.show();
+  });
+
+  contents.on("did-finish-load", () => {
+    const menu = Menu.buildFromTemplate(menuTemplate);
+    Menu.setApplicationMenu(menu);
+  });
 });
 
 app.on("window-all-closed", function() {

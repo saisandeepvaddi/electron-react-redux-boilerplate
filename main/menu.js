@@ -1,4 +1,16 @@
+const { lock } = require("./menuUtils");
+
 const template = [
+  {
+    label: "Security",
+    submenu: [
+      {
+        label: "Lock",
+        accelerator: "CmdOrCtrl+Shift+N",
+        click: () => lock()
+      }
+    ]
+  },
   {
     label: "View",
     submenu: [
