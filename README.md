@@ -20,6 +20,13 @@ Electron boilerplate with react and redux pre-configured
   git clone https://github.com/saisandeepvaddi/electron-react-redux-boilerplate.git
 ```
 
+- CD to the cloned directory and install dependencies.
+
+```shell
+  cd electron-react-redux-boilerplate
+  yarn install
+```
+
 - Have two terminals opened. One for Webpack build. Another for Electron
 
 ```shell
