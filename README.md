@@ -1,6 +1,8 @@
 # electron-react-redux-boilerplate
 Electron boilerplate with react and redux pre-configured
 
+This boilerplate can be installed via npm. See details [here][npm].
+
 # What is pre-configured
 - Webpack
 - Basic Redux boilerplate
@@ -48,3 +50,4 @@ Electron boilerplate with react and redux pre-configured
 
 
 [1]: https://www.npmjs.com/package/electron-settings
+[npm]: https://www.npmjs.com/package/electron-react-redux-boilerplate
