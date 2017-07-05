@@ -1,7 +1,8 @@
 const electron = require("electron");
-const { BrowserWindow, ipcMain, app } = electron;
+const { BrowserWindow, app } = electron;
 const url = require("url");
 const path = require("path");
+
 exports.window;
 
 exports.createWindow = () => {
@@ -20,6 +21,8 @@ exports.createWindow = () => {
       slashes: true
     })
   );
+
+  // this.window.webContents.openDevTools();
 
   this.window.on("closed", function() {
     this.window = null;

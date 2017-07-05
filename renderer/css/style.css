@@ -6,20 +6,22 @@ body {
   padding: 0;
 }
 
-#webview {
+/*Uncomment the following if you are want to use webviews. Change Id accordingly*/
+/*#webview {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   display: inline-flex !important;
-}
+}*/
 
-#root {
+/*Uncomment the following if you want root react component to take entire Window width*/
+/*#root {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   display: inline-flex !important;
-}
+}*/

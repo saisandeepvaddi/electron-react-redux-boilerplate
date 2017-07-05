@@ -20,7 +20,7 @@ module.exports = {
         use: {
           loader: "babel-loader",
           options: {
-            presets: ["env", "es2015", "react"]
+            presets: ["env", "stage-3", "react"]
           }
         }
       },
@@ -54,7 +54,6 @@ module.exports = {
       compressor: {
         warnings: false
       }
-    }),
-    new BundleAnalyzerPlugin()
+    })
   ]
 };

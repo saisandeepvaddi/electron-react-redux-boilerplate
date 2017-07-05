@@ -1,16 +1,7 @@
-const { lock } = require("./menuUtils");
+// You can import the click functions here and put inside your menu items
+const { sample } = require("./menuUtils");
 
 const template = [
-  {
-    label: "Security",
-    submenu: [
-      {
-        label: "Lock",
-        accelerator: "CmdOrCtrl+Shift+N",
-        click: () => lock()
-      }
-    ]
-  },
   {
     label: "View",
     submenu: [
@@ -36,7 +27,7 @@ const template = [
         label: "Learn More",
         click() {
           require("electron").shell.openExternal(
-            "https://github.com/saisandeepvaddi/whatsapp-green"
+            "https://github.com/saisandeepvaddi/"
           );
         }
       }

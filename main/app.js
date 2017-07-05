@@ -15,6 +15,7 @@ app.on("ready", () => {
     win.show();
   });
 
+  // Attaches Menu to the Window
   contents.on("did-finish-load", () => {
     const menu = Menu.buildFromTemplate(menuTemplate);
     Menu.setApplicationMenu(menu);
@@ -27,8 +28,9 @@ app.on("window-all-closed", function() {
   }
 });
 
+// For MacOS applications
 app.on("activate", function() {
-  if (mainWindow === null) {
+  if (win === null) {
     window.createWindow();
   }
 });
