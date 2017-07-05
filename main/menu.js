@@ -27,7 +27,7 @@ const template = [
         label: "Learn More",
         click() {
           require("electron").shell.openExternal(
-            "https://github.com/saisandeepvaddi/"
+            "https://github.com/saisandeepvaddi/electron-react-redux-boilerplate"
           );
         }
       }
