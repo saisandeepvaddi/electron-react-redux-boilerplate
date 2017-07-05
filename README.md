@@ -1,4 +1,4 @@
-# electron-react-boilerplate
+# electron-react-redux-boilerplate
 Electron boilerplate with react and redux pre-configured
 
 # What is pre-configured
