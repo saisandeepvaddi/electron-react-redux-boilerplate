@@ -1,35 +1,31 @@
 {
-  "name": "whatsapp-green",
+  "name": "my-electron-react-boilerplate",
   "version": "1.0.0",
-  "description": "Unofficial WhatsApp Desktop app with Privacy priority. Avoid message suicides",
+  "description": "Electron boilerplate with React Redux electron-settings preconfigured. Entire basic redux directories created just for you.",
   "main": "electron.main.js",
   "scripts": {
     "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "webpack:dev": "webpack -d --watch",
-    "webpack:prod": "webpack -p",
-    "webpack:build": "concurrently -p \"[{name}]\" -n \"CLEAN,WEBPACK\" -c \"bgBlue.bold,bgGreen.bold\" \"npm run clean:dist\" \"npm run webpack:prod\" ",
-    "renderer:build": "sudo yarn clean:dist && webpack -p",
+    "webpack:prod": "sudo yarn clean:dist && webpack -p",
     "clean:dist": "rimraf ./dist/*"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/saisandeepvaddi/whatsapp-green.git"
+    "url": "git+https://github.com/saisandeepvaddi/my-electron-react-boilerplate.git"
   },
   "keywords": [
-    "whatsapp",
-    "message",
-    "chat",
-    "desktop",
-    "privacy",
-    "electron"
+    "boilerplate",
+    "electron",
+    "react",
+    "redux",
+    "electron-settings"
   ],
   "author": "Sai Sandeep Vaddi <saisandeepvaddi@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/saisandeepvaddi/whatsapp-green/issues"
+    "url": "https://github.com/saisandeepvaddi/my-electron-react-boilerplate/issues"
   },
-  "homepage": "https://github.com/saisandeepvaddi/whatsapp-green#readme",
+  "homepage": "https://github.com/saisandeepvaddi/my-electron-react-boilerplate#readme",
   "dependencies": {
     "electron-settings": "^3.1.1",
     "react": "^15.6.1",
