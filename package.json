@@ -42,6 +42,7 @@
     "babel-preset-stage-3": "^6.24.1",
     "css-loader": "^0.28.4",
     "devtron": "^1.4.0",
+    "electron-devtools-installer": "^2.2.0",
     "electron-reload": "^1.2.1",
     "extract-text-webpack-plugin": "^2.1.2",
     "html-webpack-plugin": "^2.29.0",

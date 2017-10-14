@@ -36,7 +36,15 @@ This boilerplate can be installed via npm. See details [here][npm].
   terminal_2> yarn start
 ```
 
-- Devtron is included. Run the following in application's DevTools console
+- **React and Redux developer tools** are included. They will be automatically installed on application run. Redux Dev Tools will be attached to store upon running webpack. Make sure to remove or comment out following line in [main/app.js](main/app.js) in production so that you don't install dev tools extensions in production.
+
+```javascript
+  // Line 29
+  installDevToolsExtensions();
+```
+
+
+- Devtron is included. Run the following in application's console if you need it.
 
 ```javascript
   require('devtron').install()

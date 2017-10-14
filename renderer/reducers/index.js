@@ -4,9 +4,11 @@ import { SAMPLE } from "../constants";
 const settings = require("electron-settings");
 
 // Initial State
-const INITIAL_STATE = {
-  // sample: "sample"
-};
+const INITIAL_STATE =
+  settings.get("state") ||
+  {
+    // sample: "sample"
+  };
 
 // WARNING
 // TODO: Remove this later. Strictly for fast debugging of persisted state from browser console.
@@ -27,7 +29,7 @@ if (
 }
 
 // change to state = INITIAL_STATE if state is not being stored to disk
-const rootReducer = (state = settings.get("state"), action) => {
+const rootReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case SAMPLE:
       // store any changed status to disk. Use only if necessary.
