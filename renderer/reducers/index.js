@@ -28,7 +28,6 @@ if (
   settings.set("state", INITIAL_STATE);
 }
 
-// change to state = INITIAL_STATE if state is not being stored to disk
 const rootReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case SAMPLE:
