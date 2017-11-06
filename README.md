@@ -25,6 +25,8 @@ This boilerplate can be installed via npm. Skip to [manual](#install) if you wan
 # What is pre-configured
 - Webpack
 - Basic Redux boilerplate
+- React Dev Tools
+- Redux Dev Tools
 - Persistence storage with [electron-settings][1]. Can be disabled easily if not needed. Check comments in the reducer file in `renderer/reducers/index.js`
 
 # Install
@@ -72,7 +74,7 @@ This boilerplate can be installed via npm. Skip to [manual](#install) if you wan
 
 # License
 
-[MIT](https://github.com/saisandeepvaddi/electron-react-redux-boilerplate/blob/master/LICENSE) 
+[MIT](https://github.com/saisandeepvaddi/electron-react-redux-boilerplate/blob/master/LICENSE) - Sai Sandeep Vaddi
 
 
 
