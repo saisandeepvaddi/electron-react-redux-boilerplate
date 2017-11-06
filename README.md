@@ -1,7 +1,26 @@
 # electron-react-redux-boilerplate
 Electron boilerplate with react and redux pre-configured
 
-This boilerplate can be installed via npm. See details [here][npm].
+# NPM CLI App
+This boilerplate can be installed via npm. Skip to [Install](README.md#L31) if you want to clone repo yourself.
+
+```shell
+  yarn global add electron-react-redux-boilerplate
+
+  (or)
+
+  npm i -g electron-react-redux-boilerplate
+```
+
+- Create Project and install dependencies
+
+```shell
+  electron-react-redux-boilerplate <project-name>
+
+  cd <project-name>
+
+  npm install (or) yarn install
+```
 
 # What is pre-configured
 - Webpack
