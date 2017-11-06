@@ -2,7 +2,7 @@
 Electron boilerplate with react and redux pre-configured
 
 # NPM CLI App
-This boilerplate can be installed via npm. Skip to [Install](README.md#L31) if you want to clone repo yourself.
+This boilerplate can be installed via npm. Skip to [manual](#install) if you want to clone app from repo yourself.
 
 ```shell
   yarn global add electron-react-redux-boilerplate
